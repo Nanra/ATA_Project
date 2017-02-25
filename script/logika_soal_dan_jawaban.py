@@ -3,7 +3,7 @@ import sys
 
 print "*" * 50
 
-# Bagian Deklarasi
+# TODO Bagian Deklarasi
 kunci = ["A", "B", "C"]
 urut = ["PERTAMA", "KEDUA", "KETIGA"]
 soal = ["Apa nama Ibukota Indonesia ? \n A. Jakarta \n B. Bandung \n C. Medan \n D. Batam", "Apa Nama Ibukota Provinsi Jawa Barat ? \n A. Jakarta \n B. Bandung \n C. Medan \n D. Batam", "Apa nama Ibukota Provinsi Sumatera Utara ? \n A. Jakarta \n B. Bandung \n C. Medan \n D. Batam"]
@@ -13,8 +13,8 @@ catatan = ""
 i = 0
 jwb = []
 
-# Bagian Input Jawaban
 while i < len(soal):
+    # TODO Bagian Mengisi Jawaban
     print soal[i]
     jawaban = raw_input(" \nMasukkan Jawaban : ")
     i += 1
@@ -25,8 +25,9 @@ while i < len(soal):
 print " \nJawaban anda adalah : "
 
 n = 0
-# Uji Jawaban
+
 for n in range(i):
+    # TODO Bagian Menguji Jawaban
     if jwb[n] == kunci[n]:
         print "Jawaban ", urut[n], " BENAR"
         benar += 1
@@ -43,7 +44,7 @@ elif benar == 1:
 else:
     catatan = "Anda belum Lulus"
 
-# Hasil Akhir
+# TODO Bagian Menampilkan Result
 print "\nHasil Keseluruhan :"
 print "Jumlah Jawaban Benar = ", benar
 print "Jumlah Jawaban Salah = ", salah
