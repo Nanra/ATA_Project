@@ -1,7 +1,6 @@
 import socket
 
-
-def Main():
+def main():
     host = '127.0.0.1'
     port = 5000
 
@@ -10,7 +9,6 @@ def Main():
 
 
     pesan = raw_input("\n->")
-
     if len(pesan) == 0:
         pesan = raw_input("\n->")
         while len(pesan) == 0:
@@ -38,5 +36,5 @@ def Main():
         s.close()
 
 if __name__ == '__main__':
-    Main()
+    main()
 
